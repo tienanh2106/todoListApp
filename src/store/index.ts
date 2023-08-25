@@ -2,12 +2,14 @@ import {configureStore} from '@reduxjs/toolkit';
 import {
   counterSlice as counterReducer,
   loginSlice as loginReducer,
+  todoListSlice as todoListReducer,
 } from './reducer';
 
 const store = configureStore({
   reducer: {
     counter: counterReducer,
     login: loginReducer,
+    todoList: todoListReducer,
   },
 });
 

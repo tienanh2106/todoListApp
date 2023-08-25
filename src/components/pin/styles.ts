@@ -1,9 +1,7 @@
 import {Colors} from '@/themes';
-import colors from '@/themes/colors';
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  screen: {flex: 1},
   pin: {
     position: 'relative',
     borderRadius: 10,
@@ -35,37 +33,5 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '400',
     lineHeight: 20,
-  },
-  todoList: {},
-  todoList_title: {
-    color: Colors.black,
-    paddingTop: 20,
-    paddingBottom: 29,
-    fontSize: 24,
-    fontWeight: '700',
-    lineHeight: 20,
-    textAlign: 'center',
-  },
-  todoList_subTitle: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  todoList_subTitle_text: {
-    color: colors.black,
-    paddingHorizontal: 8,
-    fontSize: 15,
-    fontWeight: '400',
-    lineHeight: 20,
-  },
-  notify: {
-    marginTop: 15,
-    textAlign: 'center',
-    color: '#6D7679',
-    fontSize: 15,
-    fontWeight: '700',
-    lineHeight: 20,
-  },
-  list: {
-    marginTop: 29,
   },
 });
