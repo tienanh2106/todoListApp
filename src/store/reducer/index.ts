@@ -1,5 +1,5 @@
-import counterSlice from './counterSlice';
 import loginSlice from './loginSlice';
+import modalSlice from './modalSlice';
 import todoListSlice from './todoListSlice';
 
-export {counterSlice, loginSlice, todoListSlice};
+export {loginSlice, todoListSlice, modalSlice};

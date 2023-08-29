@@ -55,19 +55,22 @@ export const styles = StyleSheet.create({
     width: 16,
     height: 16,
     borderRadius: 100,
-    backgroundColor: '#000',
+    borderWidth: 1,
+    borderColor: '#000',
   },
   button: {
     flex: 1,
-    width: 70,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
     shadowColor: 'rgba(0, 0, 0, 0.03)',
     shadowOffset: {width: -2, height: 4},
     shadowOpacity: 0.2,
     shadowRadius: 3,
     elevation: 4,
+  },
+
+  relative: {
+    position: 'relative',
   },
   rightButton_text: {
     justifyContent: 'center',
@@ -82,5 +85,10 @@ export const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '400',
     lineHeight: 16,
+  },
+  buttonMark: {
+    position: 'absolute',
+    height: '100%',
+    top: 0,
   },
 });

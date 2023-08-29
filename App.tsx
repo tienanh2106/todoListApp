@@ -4,6 +4,7 @@ import store from './src/store';
 
 import RootNavigation from './src/navigation';
 import IntroScreen from '@/screens/introScreen';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 function App(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +21,9 @@ function App(): JSX.Element {
 
   return (
     <Provider store={store}>
-      <RootNavigation />
+      <GestureHandlerRootView style={{flex: 1}}>
+        <RootNavigation />
+      </GestureHandlerRootView>
     </Provider>
   );
 }

@@ -3,7 +3,7 @@ import colors from '@/themes/colors';
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  screen: {flex: 1},
+  screen: {flex: 1, height: '100%', justifyContent: 'space-between'},
   pin: {
     position: 'relative',
     borderRadius: 10,
@@ -17,6 +17,10 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3,
     elevation: 4,
+  },
+  filterIcon: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   pinIcon: {
     position: 'absolute',
@@ -45,6 +49,7 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 20,
     textAlign: 'center',
+    zIndex: 1000,
   },
   todoList_subTitle: {
     flexDirection: 'row',
@@ -58,8 +63,6 @@ export const styles = StyleSheet.create({
     lineHeight: 20,
   },
   notify: {
-    marginTop: 15,
-    textAlign: 'center',
     color: '#6D7679',
     fontSize: 15,
     fontWeight: '700',
@@ -67,5 +70,27 @@ export const styles = StyleSheet.create({
   },
   list: {
     marginTop: 29,
+  },
+  addButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    height: 80,
+  },
+  addButtonMark: {
+    position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 56,
+    height: 56,
+    backgroundColor: '#E53935',
+    top: -20,
+    right: 0,
+    borderRadius: 999,
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    shadowOffset: {width: -2, height: 4},
+    shadowOpacity: 0.8,
+    shadowRadius: 3,
+    elevation: 10,
   },
 });

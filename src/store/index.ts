@@ -1,13 +1,13 @@
 import {configureStore} from '@reduxjs/toolkit';
 import {
-  counterSlice as counterReducer,
+  modalSlice as modalReducer,
   loginSlice as loginReducer,
   todoListSlice as todoListReducer,
 } from './reducer';
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    modal: modalReducer,
     login: loginReducer,
     todoList: todoListReducer,
   },

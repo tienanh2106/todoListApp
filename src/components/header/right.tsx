@@ -1,7 +1,6 @@
 import {Pressable, StyleSheet, View} from 'react-native';
-import Search from '@/assets/icons/ic_outline-search.svg';
-import Menu from '@/assets/icons/ic_menu.svg';
 import React from 'react';
+import {Menu, Search} from '@/assets/icons';
 
 export default function RightHeader() {
   return (
